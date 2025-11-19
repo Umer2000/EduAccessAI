@@ -239,7 +239,8 @@ Output directory: dist/<h2/>
 <h1>👤 Author<h1/>
 
 <h2>Team: Genesis Hackers<h2/>
- <h2></h2>Umer Anis- AI Developer
-Shadab Ahmed-Accessibility Advocate Shadab Ahmed
-Built for the AI Genesis Hackathon(lablab.ai)<h2/>
+ <h2>Umer Anis- AI Developer<h2/>
+             
+<h2>Shadab Ahmed-Accessibility Advocate<h2/>
+<h2>Built for the AI Genesis Hackathon(lablab.ai)<h2/>
 
