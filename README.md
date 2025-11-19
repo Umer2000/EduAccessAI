@@ -119,62 +119,74 @@ Deployed on Vercel
 
 2.Backend
 
-FastAPI
+FastAPI + Uvicorn
 
-Uvicorn
-
-Python 3.10+
+Python
 
 PDF extraction (pypdf)
 
-Environment-managed secrets
-
-Hosted on Render
+Deployed on Render
 
 3.AI
 
-Gemini 2.5 Flash (simplification + summarization + reading level)
+Gemini 2.5 Flash (simplification, summarization, language adaptation)
 
-Opus Workflow Engine (agentic review + audit + approval)<h2/>
+4.Automation
 
-🔧 Setup Guide
-1️⃣ Clone the repository
+Opus Workflow Engine
+
+API trigger
+
+Fetch content
+
+Agentic decisioning
+
+Automated quality checks
+
+Webhook callback<h2/>
+
+<h1>🔧 Setup Guide<h1/>
+<h2/>1️⃣ Clone the repository
 
 git clone https://github.com/Umer2000/EduAccessAI.git
-cd EduAccessAI
+cd EduAccessAI<h2>
 
-⚙️ Backend Setup (FastAPI)
-Create .env
-GEMINI_API_KEY=your_key_here
+<h1>⚙️ Backend Setup (FastAPI)<h1/>
+<h2>.env example
+GEMINI_API_KEY=your_gemini_key
 GEMINI_MODEL_ID=gemini-2.5-flash
-OPUS_API_URL=your_opus_workflow_url
-OPUS_API_KEY=optional
+OPUS_API_URL=https://api.opus.ai/workflows/<id>/start
+OPUS_API_KEY=your_opus_api_key
+
 
 Install dependencies
 pip install -r requirements.txt
 
+
 Run backend locally
 uvicorn main:app --reload
 
-Backend runs at:
-http://127.0.0.1:8000
 
-🖥️ Frontend Setup (Vite + React)
-Go to frontend folder
+Backend runs at:
+http://127.0.0.1:8000<h2/>
+
+<h1>🖥️ Frontend Setup (Vite + React)<h1/>
+            
+<h2>Go to frontend folder
 cd frontend
 Create .env
 VITE_API_BASE_URL=http://127.0.0.1:8000
+            
+Install and Run
 npm install
-npm run dev
+npm run dev<h2/>
 
-☁️ Deployment
-🟣 Backend → Render
+<h1>☁️ Deployment<h1/>
+<h2>🟣 Backend → Render
 
-Create Web Service
+Build: pip install -r requirements.txt
+Start: uvicorn main:app --host 0.0.0.0 --port $PORT
 
-Build command:
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port $PORT
 Add environment variables
 
 🟢 Frontend → Vercel
@@ -184,38 +196,49 @@ Import GitHub repo
 Add Vercel env var:
 VITE_API_BASE_URL=https://eduaccessai.onrender.com/
 Build: npm run build
-Output: dist/
+Output directory: dist/<h2/>
 
-Current Status
+<h1>📌 Current Status<h1/>
 
-✔ Teacher–Student dashboard complete
+<h2>✔ Teacher dashboard
 
-✔ Gemini simplification working
+✔ Student dashboard
 
-✔ Render backend live
+✔ Gemini 2.5 Flash integration
 
-✔ Vercel frontend live
+✔ Real-time PDF processing
 
-✔ Spanish + English support
+✔ Language support: English + Spanish
 
-✔ Lesson storage + reading levels
+✔ Live backend (Render)
 
-✔ Webhook endpoint for Opus ready
+✔ Live frontend (Vercel)
 
-⏳ Opus workflow integration in progress
+✔ Opus workflow fully integrated
+
+✔ Webhook updating lessons correctly
+
+✔ Full end-to-end accessibility pipeline<h2/>
 
 
-Roadmap
+<h1>Roadmap<h1/>
 
-🔵 Add more languages 
+<h2>🔵 Add OCR for images-only PDFs 
 
-🔵 Add image-to-text OCR for image-only PDFs
+🔵 Add more languages
 
-🔵 Add multiple student accounts per teacher
+🔵 Add real database (Supabase / Firebase)
 
-🔵 Add advanced TTS (via ElevenLabs or Google TTS)
+🔵 Add student analytics & reading progress
 
-🔵 Store lessons in a real database (Supabase or Firestore)
+🔵Multi-teacher multi-classroom support
 
-🔵 Add student progress tracking
+🔵 Improve audio using advanced TTS<h2/>
+
+<h1>👤 Author<h1/>
+
+<h2>Team: Genesis Hackers<h2/>
+ <h2></h2>Umer Anis- AI Developer
+Shadab Ahmed-Accessibility Advocate Shadab Ahmed
+Built for the AI Genesis Hackathon(lablab.ai)<h2/>
 
