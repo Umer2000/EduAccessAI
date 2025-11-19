@@ -1,103 +1,123 @@
-🎓 EduAccess AI
-Instantly convert classroom PDFs into accessible lessons using Gemini 2.5 Flash + Opus workflows
-🚀 Overview
+# **🎓 EduAccess AI**
+<h2>Instantly convert classroom PDFs into accessible lessons using Gemini 2.5 Flash + Opus workflows<h2/>
+<h1>🚀 Overview</h1>
 
-EduAccess AI is an accessibility-focused platform that transforms traditional classroom materials into inclusive, student-ready learning experiences.
+<h2>EduAccess AI is an accessibility-focused platform that transforms traditional classroom materials into inclusive, student-ready learning experiences.
 Teachers upload any PDF or worksheet, and the system automatically:
 
-Extracts content
+Extracts and simplifies the content
 
-Simplifies language
-
-Adapts the lesson for dyslexic or blind students
+Adapts it for dyslexic or blind learners
 
 Generates reading levels
 
-Passes the output through an Opus agentic review workflow for quality and safety
+Passes the lesson through an Opus agentic review workflow
+
+Updates lesson status and audit logs via webhook
 
 Publishes approved lessons to a student dashboard
 
-Built for the AI Genesis Hackathon, EduAccess AI streamlines accessibility and improves learning for millions of students who struggle with reading disabilities or visual impairments.
+Built for the AI Genesis Hackathon, EduAccess AI delivers a seamless accessibility pipeline powered by Gemini 2.5 Flash and Opus.<h2>
 
-✨ Features
-👩‍🏫 Teacher Dashboard
+<h1>✨ Features</h1>
+<h3>👩‍🏫 Teacher Dashboard</h3>
 
-Upload PDFs, images, or worksheets
+<h2>Upload PDFs / images
 
-Choose accessibility profile: Dyslexic or Blind
+Run AI-powered content simplification
 
-Choose output language: English or Spanish
+Trigger Opus workflows for automated review
 
-View past lessons, status, and AI + human review logs
+View lesson audit reports and approval status
 
-Trigger Opus workflow for quality assurance
+Manage lessons across profiles and languages<h2/>
 
-🧑‍🎓 Student Dashboard
+<h3>🧑‍🎓 Student Dashboard<h3/>
 
-Filter lessons by profile and language
+<h2>Browse teacher-approved lessons
 
-Read simplified text in a clean, accessible format
+Filter by profile & language
+
+Read simplified accessible text
 
 Listen using built-in text-to-speech
 
-View key points and reading difficulty level
+View bullet-point summaries & reading level<h2/>
 
-⚙️ Backend (FastAPI)
+<h1>⚙️ Backend (FastAPI)<h1/>
 
-PDF extraction using pypdf
+<h2>PDF text extraction using pypdf
 
-Gemini 2.5 Flash text simplification + summarization
+Gemini 2.5 Flash for simplification & summarization
 
-Lesson storage
+AI-driven reading-level estimation
 
-Webhook endpoint for Opus to return audit decisions
+Lesson database stored in-memory (hackathon mode)
 
-Fully CORS enabled for frontend
+Accepts Opus webhook for final audit & approval<h2/>
 
-🤖 Opus Workflow
+<h1>🤖 Opus Workflow (Fully Integrated)<h1/>
 
-API-triggered workflow using inputs:
+<h2>The Opus pipeline includes:
+
+1.API Trigger using inputs:
+
 lesson_id, teacher_id, profile, language
 
-Fetch lesson from backend
+2.Fetch Lesson node
+Fetches lesson content from FastAPI backend.
 
-Agentic Review: clarity checks, accessibility checks, rule-based decision
+3.Agentic AI Review
+Gemini evaluates clarity, accessibility issues, structure, and reading level.
+Generates:
 
-Optional Human Review
+decision (ready_for_students or needs_changes)
 
-Sends audit + status back to backend via webhook
+issues list
+
+overall comments
+
+suggested reading level
+
+4.Optional Human Reviewer
+Teacher or moderator can approve or reject.
+
+5.Webhook Delivery
+Opus POSTs results to:
+/api/lessons/{lesson_id}/opus-webhook<h2/>
+FastAPI updates the lesson status, audit trail, and metadata.
+
+6.Student Dashboard Updates Automatically
+Students instantly see approved content.<h2/>
 
 
-🧠 Architecture
 
-Frontend (React + Vite + Vercel)
-         |
-         v
-Backend (FastAPI on Render)
-         |
-   Gemini 2.5 Flash
-         |
-         v
-     Opus Workflow
-         |
-         v
-Webhook → FastAPI → Updates Lesson → Students See Final Output
+<h1>🧠 Architecture<h1/>
 
-🛠️ Tech Stack
+<h2>Frontend (React + Vite + Vercel)
+            ↓
+     FastAPI Backend (Render)
+            ↓
+     Gemini 2.5 Flash (AI)
+            ↓
+       Opus Workflow
+            ↓
+Webhook → FastAPI → Lesson Updated → Students See It<h2/>
 
-Frontend
+
+<h1>🛠️ Tech Stack<h1/>
+
+<h2>1.Frontend
 
 React + Vite
 
 TypeScript
 
-Tailwind-like styling (custom CSS)
+Custom CSS
 
-Text-to-Speech API
+Deployed on Vercel
 
-Hosted on Vercel
-
-Backend
+2.Backend
 
 FastAPI
 
@@ -111,11 +131,11 @@ Environment-managed secrets
 
 Hosted on Render
 
-AI
+3.AI
 
 Gemini 2.5 Flash (simplification + summarization + reading level)
 
-Opus Workflow Engine (agentic review + audit + approval)
+Opus Workflow Engine (agentic review + audit + approval)<h2/>
 
 🔧 Setup Guide
 1️⃣ Clone the repository
