@@ -1,6 +1,6 @@
 # **🎓 EduAccess AI**
 <h2>Transforms classroom materials into dyslexia-friendly and screen-reader-ready content using Gemini + Opus.<h2/>
-<h2>Power Point Presentation Link (https://docs.google.com/presentation/d/1RCJdNovGxJhpGoBsq0KLagEu2k0WZkxU/edit?usp=sharing&ouid=103135272738788649143&rtpof=true&sd=true<h2/>)
+<h2>Power Point Presentation Link https://docs.google.com/presentation/d/1RCJdNovGxJhpGoBsq0KLagEu2k0WZkxU/edit?usp=sharing&ouid=103135272738788649143&rtpof=true&sd=true<h2/>
 <h1>🚀 Overview</h1>
 
 <h2>EduAccess AI is an accessibility-focused platform that transforms traditional classroom materials into inclusive, student-ready learning experiences.
