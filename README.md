@@ -1,5 +1,5 @@
 # **🎓 EduAccess AI**
-<h2>Instantly convert classroom PDFs into accessible lessons using Gemini 2.5 Flash + Opus workflows<h2/>
+<h2>Transforms classroom materials into dyslexia-friendly and screen-reader-ready content using Gemini + Opus.<h2/>
 <h1>🚀 Overview</h1>
 
 <h2>EduAccess AI is an accessibility-focused platform that transforms traditional classroom materials into inclusive, student-ready learning experiences.
