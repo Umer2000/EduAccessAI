@@ -1,6 +1,6 @@
 # **🎓 EduAccess AI**
 <h2>Transforms classroom materials into dyslexia-friendly and screen-reader-ready content using Gemini + Opus.<h2/>
-<h2>Power Point Presentation Link https://docs.google.com/presentation/d/1RCJdNovGxJhpGoBsq0KLagEu2k0WZkxU/edit?usp=sharing&ouid=103135272738788649143&rtpof=true&sd=true<h2/>
+
 <h1>🚀 Overview</h1>
 
 <h2>EduAccess AI is an accessibility-focused platform that transforms traditional classroom materials into inclusive, student-ready learning experiences.
@@ -19,6 +19,8 @@ Updates lesson status and audit logs via webhook
 Publishes approved lessons to a student dashboard
 
 Built for the AI Genesis Hackathon, EduAccess AI delivers a seamless accessibility pipeline powered by Gemini 2.5 Flash and Opus.<h2>
+
+<h2>Power Point Presentation Link https://docs.google.com/presentation/d/1RCJdNovGxJhpGoBsq0KLagEu2k0WZkxU/edit?usp=sharing&ouid=103135272738788649143&rtpof=true&sd=true<h2/>
 
 <h1>✨ Features</h1>
 <h3>👩‍🏫 Teacher Dashboard</h3>
